@@ -1,0 +1,71 @@
+.back-img{
+	width: 1427px;
+	height: 903px ;
+	/*background-image: url(img/6.svg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	position: relative;
+}
+.cloud{
+	width: 300px ;
+	height:300px ;
+	position: absolute;
+	top: 30px;
+	right: 100px;
+	animation: cloud 20s infinite;
+}
+
+.wm{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 350px;
+	right: 50px;
+	animation: wm 20s infinite;
+}
+
+.moon{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 500px;
+	left: 400px;
+	animation: moon 20s infinite;
+}
+.cloud1{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	animation: cloud1 20s infinite;
+}
+.cloud2{
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	top: 170px;
+	left: 10px;
+	animation: cloud2 20s infinite;
+}
+@keyframes cloud{
+	from{right: 100px}
+	to{right: 400px}
+}
+@keyframes cloud1{
+	from{left: 0px;}
+	to { left: 500px; }
+}
+@keyframes cloud2{
+	from{ left: 10px; }
+	to{ left: 400px; }
+}
+@keyframes moon{
+	from{top: 500px;}
+	to{top: 100px}
+}
+@keyframes wm{
+	0%{ right: 50px; }
+	95%{right: 450px;opacity: 1;}
+	100%{right: 700px; opacity: 0.1;}
+}
